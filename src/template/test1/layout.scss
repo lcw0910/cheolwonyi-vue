@@ -1,0 +1,100 @@
+//@import "~bootstrap/scss/bootstrap";
+
+
+html, body {
+  font-family: dotum, '돋움', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+#app {
+  color: #2c3e50;
+  height: 100%;
+  //background: red;
+}
+
+div#wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  min-height: 300px;
+  //margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer, nav, aside, section {
+  border: 1px solid #999999;
+  //margin: 1px;
+  padding: 5px;
+}
+
+div#container {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+}
+
+header {
+  background: #a3bfff;
+  flex: 0 0 50px;
+}
+
+.scrollbar {
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+}
+
+/* Navigation Bar (Start) */
+nav {
+  background: #ffcfc8;
+  flex: 0 0 150px;
+}
+
+/* Navigation Bar (End) */
+
+
+section {
+  background: #deb4dc;
+  //flex: 0 0 600px;
+  flex: 1 0 auto;
+}
+
+aside {
+  flex: 0 0 150px;
+  background: #94d293;
+  margin-left: auto;
+}
+
+footer {
+  flex: 0 0 50px;
+  background: #a57c62;
+  //position: relative;
+}
+
+/*
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}*/
